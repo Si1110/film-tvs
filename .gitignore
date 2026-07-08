@@ -209,34 +209,8 @@ __marimo__/
 
 backup
 
-*.txt
 *.json
 # OpenCode large context guard
-res/covers/
-res/hot-covers/
-res/movie-covers/
-imgs/
-res/**/*.png
-res/**/*.jpg
-res/**/*.jpeg
-res/**/*.webp
-res/**/*.gif
-res/**/*.avif
-res/**/*.ico
-imgs/**/*.png
-imgs/**/*.jpg
-imgs/**/*.jpeg
-imgs/**/*.webp
-imgs/**/*.gif
-imgs/**/*.avif
-imgs/**/*.ico
-*.png
-*.jpg
-*.jpeg
-*.webp
-*.gif
-*.avif
-*.ico
 tmp/
 logs/
 *.sqlite
