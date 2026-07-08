@@ -1,0 +1,1022 @@
+body {
+    background: #0f0c29;
+    color: #e0e0e0;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;  /* 确保它在页面的最顶层 */
+    width: 100%; /* 确保它宽度与容器一致 */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card-img {
+    display: block; /* 设置图片为块级元素 */
+    margin: auto; /* 水平居中图片 */
+    padding: 2px; /* 在图片周围添加10px的间隙 */
+    max-width: 100%; /* 确保图片不会超出容器宽度 */
+    height: auto; /* 保持图片原有比例 */
+}
+
+.bold-border {
+    border: 2px solid #000000; /* 设置边框为2px粗且颜色为黑色 */
+}
+
+.button-link {
+    background: none;            /* 无背景 */
+    color: blue;                 /* 链接蓝色 */
+    border: none;                /* 无边框 */
+    padding: 0;                  /* 无内边距 */
+    margin: 0;                   /* 根据需要调整外边距 */
+    font: inherit;               /* 继承字体样式 */
+    cursor: pointer;             /* 手型光标 */
+    text-decoration: underline;  /* 下划线，模仿链接 */
+}
+
+.button-link:hover,
+.button-link:focus {
+    text-decoration: none;       /* 鼠标悬停和聚焦时无下划线 */
+    color: darkblue;             /* 悬停时颜色加深 */
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 元素之间的间距 */
+}
+
+.header-title {
+    margin-bottom: 0;
+    flex-shrink: 0; /* Logo 不缩小 */
+}
+
+/* Logo 图片样式 - 防止变形 */
+.header-logo {
+    height: 120px;
+    width: auto; /* 保持宽高比 */
+    max-width: 100%; /* 防止溢出 */
+    object-fit: contain; /* 保持图片比例 */
+    display: block;
+}
+
+/* 搜索框容器 */
+.search-container {
+    flex-grow: 1; /* 搜索框占据中间剩余空间 */
+    max-width: 600px; /* 最大宽度（增加 20%） */
+    min-width: 240px; /* 最小宽度（增加 20%） */
+}
+
+.search-container .input-group {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search-container .form-control {
+    border: 2px solid #d4af37;
+    border-right: none;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.search-container .form-control:focus {
+    box-shadow: none;
+    border-color: #b8860b;
+}
+
+.search-container .btn {
+    border: 2px solid #d4af37;
+    border-left: none;
+    background: linear-gradient(to right, #ffd700, #b8860b);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.search-container .btn:hover {
+    background: linear-gradient(to right, #b8860b, #ffd700);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.header-explanation {
+    padding: 10px;
+    background-image: linear-gradient(to right, #ffd700, #b8860b);
+    border: 3px solid hsl(210.8, 73.86%, 30%);
+    border-radius: 5px;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-shrink: 0; /* 公告不缩小 */
+}
+
+
+.tooltip-inner {
+    text-align: left; /* 设置文本为左对齐 */
+    font-size: 11px; /* 设置字号为 11px，大约等于 8 号字体 */
+}
+
+/* 回到顶部按钮 */
+.back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: rgba(0, 86, 179, 0.9);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* 返回首页按钮 */
+.back-to-home {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(212, 175, 55, 0.9);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+    text-decoration: none;
+}
+
+.back-to-home:hover {
+    background-color: rgba(212, 175, 55, 1);
+    color: white;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* 快速导航 */
+.quick-nav {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 998;
+}
+
+.quick-nav-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-link-item {
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border-left: 3px solid #007bff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link-item:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateX(-3px);
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
+
+.nav-count-badge {
+    background-color: #28a745;
+    color: white;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 8px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.nav-link-item:hover .nav-count-badge {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* 导航链接激活状态 */
+.nav-link-item.active {
+    background-color: rgba(33, 150, 243, 0.3);
+    border-left: 4px solid #2196F3;
+    font-weight: bold;
+}
+
+.nav-link-item.active .nav-count-badge {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* 分页导航栏样式 */
+.section-navigation-bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-bottom: 20px;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 导航按钮样式 */
+.section-navigation-bar button {
+    transition: all 0.3s ease;
+}
+
+.section-navigation-bar button:hover:not(:disabled) {
+    background: linear-gradient(135deg, #f4e5a1, #d4af37, #f4e5a1) !important;
+    border-color: #f4e5a1 !important;
+    transform: scale(1.08);
+    box-shadow: 0 4px 15px rgba(244, 229, 161, 0.6);
+}
+
+.section-navigation-bar button:active:not(:disabled) {
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
+}
+
+.section-navigation-bar button:disabled {
+    opacity: 0.4 !important;
+    cursor: not-allowed;
+    background: linear-gradient(135deg, #666, #555, #666) !important;
+    border-color: #555 !important;
+    filter: grayscale(100%);
+}
+
+/* Section 切换动画 */
+.section-content-fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ==================== 主页导航卡片样式 ==================== */
+.section-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-card .card-title {
+    color: #ffff00;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    margin: -1rem -1rem 1rem -1rem;
+}
+
+.section-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, #d4af37, #f4e5a1, #d4af37);
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(212, 175, 55, 0.3);
+}
+
+.thumbnail-placeholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4af37;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* 响应式设计 - 在小屏幕上隐藏快速导航 */
+@media (max-width: 768px) {
+    .quick-nav {
+        display: none;
+    }
+    
+    .back-to-top {
+        right: 20px;
+        bottom: 20px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .section-navigation-bar {
+        font-size: 14px;
+    }
+    
+    .section-navigation-bar button {
+        font-size: 12px;
+        padding: 5px 10px;
+        min-width: 80px !important;
+    }
+}
+
+/* 搜索结果高亮显示 */
+#searchResults mark {
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* 搜索模态框样式 */
+#searchModal .modal-dialog {
+    max-width: 912px; /* 约为 Bootstrap container (1140px) 的 80% */
+}
+
+@media (max-width: 1200px) {
+    #searchModal .modal-dialog {
+        max-width: 80%; /* 在中等屏幕上使用百分比 */
+    }
+}
+
+#searchModal .modal-content {
+    border: 3px solid #d4af37; /* 金色边框 */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#searchModal .modal-header {
+    background: linear-gradient(to right, #ffd700, #b8860b);
+    color: #fff;
+    border-bottom: 3px solid #b8860b;
+    border-radius: 12px 12px 0 0;
+    padding: 20px;
+}
+
+#searchModal .modal-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+#searchModal .btn-close {
+    filter: brightness(0) invert(1); /* 白色关闭按钮 */
+    opacity: 0.8;
+}
+
+#searchModal .btn-close:hover {
+    opacity: 1;
+}
+
+#searchModal .modal-body {
+    padding: 25px;
+    background-color: #f8f9fa;
+}
+
+/* 搜索结果卡片样式 */
+#searchResults .card {
+    transition: all 0.3s ease;
+    border: 2px solid #ddd;
+}
+
+#searchResults .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-color: #d4af37;
+}
+
+#searchResults .card-img-top {
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* ==================== 支付下载模态框样式 ==================== */
+#downloadModal .modal-dialog {
+    max-width: 500px; /* 适中宽度 */
+}
+
+#downloadModal .modal-content {
+    border: 3px solid #d4af37; /* 金色边框 */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#downloadModal .modal-header {
+    background: linear-gradient(to right, #ffd700, #b8860b);
+    color: #fff;
+    border-bottom: 3px solid #b8860b;
+    border-radius: 12px 12px 0 0;
+    padding: 20px;
+}
+
+#downloadModal .modal-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+#downloadModal .btn-close {
+    filter: brightness(0) invert(1); /* 白色关闭按钮 */
+    opacity: 0.8;
+}
+
+#downloadModal .btn-close:hover {
+    opacity: 1;
+}
+
+#downloadModal .modal-body {
+    padding: 25px;
+    background-color: #f8f9fa;
+}
+
+#downloadModal .modal-footer {
+    background-color: #f8f9fa;
+    border-top: 2px solid #d4af37;
+    border-radius: 0 0 12px 12px;
+    padding: 15px 25px;
+}
+
+/* 支付图片容器 */
+#downloadModal .modal-body .d-flex {
+    gap: 15px;
+}
+
+#downloadModal .modal-body img {
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+#downloadModal .modal-body img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(212, 175, 55, 0.3);
+}
+
+/* 下载信息提示框 */
+#downloadModal .alert-info {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    border: 2px solid #2196F3;
+    border-radius: 10px;
+    color: #0d47a1;
+}
+
+#downloadModal .alert-info strong {
+    color: #1565c0;
+}
+
+#downloadModal .alert-info a {
+    color: #1976d2;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#downloadModal .alert-info a:hover {
+    color: #0d47a1;
+}
+
+/* 按钮样式 */
+#downloadModal .btn-secondary {
+    background: linear-gradient(135deg, #9e9e9e, #757575);
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#downloadModal .btn-secondary:hover {
+    background: linear-gradient(135deg, #757575, #616161);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#downloadModal .btn-primary {
+    background: linear-gradient(135deg, #ffd700, #b8860b);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#downloadModal .btn-primary:hover:not(:disabled) {
+    background: linear-gradient(135deg, #b8860b, #ffd700);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(212, 175, 55, 0.4);
+}
+
+#downloadModal .btn-primary:disabled {
+    background: linear-gradient(135deg, #cccccc, #999999);
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* 复制按钮样式 */
+#downloadModal .btn-outline-secondary {
+    border: 2px solid #d4af37;
+    color: #b8860b;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#downloadModal .btn-outline-secondary:hover {
+    background: linear-gradient(135deg, #ffd700, #b8860b);
+    border-color: #ffd700;
+    color: #000;
+}
+
+#downloadModal .btn-success {
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+    border: none;
+    color: #fff;
+}
+
+/* ========================================
+   移动端响应式优化
+   ======================================== */
+
+/* 平板设备 (768px - 991px) */
+@media (max-width: 991px) {
+    /* 头部容器调整 */
+    .header-container {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .header-title {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Logo 响应式调整 */
+    .header-logo {
+        max-height: 200px;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .search-container {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 15px;
+    }
+    
+    .header-explanation {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        white-space: normal;
+        font-size: 14px;
+    }
+    
+    /* 卡片调整 */
+    .card {
+        margin-bottom: 15px !important;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    /* 导航栏调整 */
+    .section-navigation-bar {
+        padding: 10px 5px;
+    }
+    
+    .section-navigation-bar button {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+
+/* 手机设备 (小于 768px) */
+@media (max-width: 768px) {
+    /* 头部优化 */
+    .header-container {
+        padding: 10px 5px;
+    }
+    
+    /* 移动端隐藏 Logo，节省屏幕空间 */
+    .header-title {
+        display: none;
+    }
+    
+    .search-container {
+        margin: 0 10px;
+    }
+    
+    .search-container .form-control {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+    
+    .search-container .btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+    
+    .search-container .btn svg {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .header-explanation {
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    /* 容器优化 */
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    /* 卡片优化 */
+    .card {
+        margin-bottom: 12px !important;
+    }
+    
+    .card-body {
+        padding: 12px;
+    }
+    
+    .card-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .card-text {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    
+    .list-group-item {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    
+    /* 按钮优化 */
+    .btn {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+    
+    .btn-group .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    /* 徽章优化 */
+    .badge {
+        font-size: 11px;
+        padding: 3px 8px;
+    }
+    
+    /* 模态框优化 */
+    #searchModal .modal-dialog,
+    #downloadModal .modal-dialog {
+        margin: 10px;
+        max-width: calc(100% - 20px);
+    }
+    
+    #searchModal .modal-body,
+    #downloadModal .modal-body {
+        padding: 15px;
+    }
+    
+    #searchModal .modal-header,
+    #downloadModal .modal-header {
+        padding: 12px 15px;
+    }
+    
+    #searchModal .modal-title,
+    #downloadModal .modal-title {
+        font-size: 18px;
+    }
+    
+    /* 搜索结果卡片 */
+    #searchResults .card {
+        margin-bottom: 10px;
+    }
+    
+    #searchResults .card-body {
+        padding: 10px;
+    }
+    
+    #searchResults .card-title {
+        font-size: 15px;
+    }
+    
+    #searchResults .card-text {
+        font-size: 12px;
+    }
+    
+    /* 支付图片优化 */
+    #downloadModal .modal-body img {
+        max-width: 100%;
+        height: auto;
+        margin: 5px;
+    }
+    
+    #downloadModal .modal-body .d-flex {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    /* 导航栏优化 */
+    .section-navigation-bar button {
+        font-size: 11px;
+        padding: 4px 8px;
+        min-width: 60px !important;
+    }
+    
+    /* 回到顶部按钮 */
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 18px;
+    }
+}
+
+/* 小手机设备 (小于 576px) */
+@media (max-width: 576px) {
+    /* 头部进一步优化 */
+    .header-logo {
+        max-height: 120px;
+        height: auto;
+    }
+    
+    .search-container {
+        min-width: auto;
+        margin: 0 5px;
+    }
+    
+    .search-container .form-control {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .search-container .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    /* 小屏幕隐藏搜索按钮文字，只保留图标 */
+    .search-container .btn {
+        font-size: 0;
+    }
+    
+    .search-container .btn svg {
+        font-size: initial;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .header-explanation {
+        padding: 6px;
+        font-size: 11px;
+    }
+    
+    /* 容器进一步优化 */
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    /* 卡片进一步优化 */
+    .card {
+        margin-bottom: 10px !important;
+        border-width: 1px;
+    }
+    
+    .card-body {
+        padding: 10px;
+    }
+    
+    .card-title {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    
+    .card-text {
+        font-size: 12px;
+    }
+    
+    .list-group-item {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    /* 按钮进一步优化 */
+    .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    .btn-group {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .btn-group .btn {
+        flex: 1;
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+    
+    /* 模态框进一步优化 */
+    #searchModal .modal-dialog,
+    #downloadModal .modal-dialog {
+        margin: 5px;
+        max-width: calc(100% - 10px);
+    }
+    
+    #searchModal .modal-body,
+    #downloadModal .modal-body {
+        padding: 10px;
+    }
+    
+    #searchModal .modal-header,
+    #downloadModal .modal-header {
+        padding: 10px;
+    }
+    
+    #searchModal .modal-title,
+    #downloadModal .modal-title {
+        font-size: 16px;
+    }
+    
+    /* 支付模态框按钮 */
+    #downloadModal .modal-footer {
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    #downloadModal .modal-footer .btn {
+        flex: 1;
+        min-width: calc(50% - 4px);
+    }
+    
+    /* 导航栏进一步优化 */
+    .section-navigation-bar {
+        font-size: 12px;
+        padding: 8px 2px;
+    }
+    
+    .section-navigation-bar button {
+        font-size: 10px;
+        padding: 3px 6px;
+        min-width: 50px !important;
+        margin: 2px;
+    }
+    
+    /* 回到顶部按钮 */
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+        bottom: 10px;
+        right: 10px;
+        font-size: 16px;
+    }
+    
+    /* 表格响应式 */
+    table {
+        font-size: 12px;
+    }
+    
+    table th,
+    table td {
+        padding: 6px;
+    }
+}
+
+/* 横屏模式优化 */
+@media (max-height: 500px) and (orientation: landscape) {
+    .header-container {
+        padding: 5px;
+    }
+    
+    /* Logo 横屏模式 */
+    .header-logo {
+        max-height: 40px;
+        height: auto;
+        width: auto;
+    }
+    
+    .search-container {
+        max-width: 400px;
+    }
+    
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+/* 触摸设备优化 */
+@media (hover: none) and (pointer: coarse) {
+    /* 增大可点击区域 */
+    .btn,
+    button,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* 优化卡片点击 */
+    .card {
+        cursor: pointer;
+    }
+    
+    /* 移除hover效果，使用active状态 */
+    .btn:active,
+    .card:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+}
+  
+  
+  
+  

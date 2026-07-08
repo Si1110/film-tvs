@@ -1,0 +1,50 @@
+        <div class="card-wrapper"{% if genre %} data-genre="{{ genre }}"{% endif %}{% if region %} data-region="{{ region }}"{% endif %} data-lang="{{ language }}" data-heji="{{ is_heji }}">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="row g-0 h-100">
+              <div class="col-md-4">
+                <a href="{{ poster_path }}" target="_blank" class="h-100 d-block">
+                  <div class="card-img-wrapper h-100">
+                    <img src="{{ poster_path }}" class="card-grid-img" alt="{{ title }}" loading="lazy">
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body d-flex flex-column h-100 py-2 px-3">
+                  <div class="d-flex justify-content-between align-items-start mb-1">
+                    <h3 class="card-title fw-bold mb-0 h5" style="color: #2d2d2d; word-break: break-word;">{{ title }}</h3>
+                    {% if subtitle %}<span class="badge bg-secondary ms-1 flex-shrink-0">{{ subtitle }}</span>{% endif %}
+                  </div>
+                  <div class="card-text small text-muted mb-1 flex-grow-1 d-flex flex-column">
+                    <p class="desc-text mb-0" id="{{ card_id }}" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">{{ description }}</p>
+                    {% if description|length > 60 %}
+                    <span class="desc-toggle mt-1" style="color:#ffd700;cursor:pointer;font-size:0.75rem;user-select:none;flex-shrink:0;" onclick="toggleDesc('{{ card_id }}')">展开全文 ∨</span>
+                    {% endif %}
+                  </div>
+                  <div class="d-flex flex-wrap align-items-center gap-2 mb-2 small">
+                    <span class="badge bg-light text-dark border"><i class="bi bi-translate"></i> {{ language }}</span>
+                    <span class="badge bg-light text-dark border subtitle-badge"><i class="bi bi-subtitles"></i> {{ subtitle_text }}</span>
+                    {{ format_badges | safe }}
+                    {% set genre_tags = genre.split('/') if genre else [] %}
+                    {% for g in genre_tags %}
+                    <span class="badge genre-badge">{{ g }}</span>
+                    {% endfor %}
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mt-auto pt-2 border-top">
+                    <div class="d-flex align-items-center gap-1 small">
+                      {% if menu_path %}
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#collectionDirModal"
+                        data-dir-key="{{ menu_path }}" data-dir-title="{{ title }}">
+                        <i class="bi bi-folder"></i> 目录</button>
+                      {% endif %}
+                      <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#downloadModal" 
+                        data-bs-download="{{ download_link }}" 
+                        data-uuid="{{ password }}">
+                        <i class="bi bi-download"></i> 点此下载</button>
+                    </div>
+                    {% if '上映时间' in card_foot %}<small class="text-muted text-end ms-2" style="font-size: 0.7rem;">{{ card_foot }}</small>{% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

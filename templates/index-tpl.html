@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ SEO_TITLE }}</title>
+    <meta name="description" content="{{ SEO_DESCRIPTION }}">
+    <meta name="keywords" content="{{ SEO_KEYWORDS }}">
+    <meta name="author" content="{{ SEO_AUTHOR }}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="theme-color" content="#0f0c29">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="{{ SEO_DOMAIN }}">
+    <link rel="alternate" hreflang="zh-CN" href="{{ SEO_DOMAIN }}">
+    <link rel="alternate" hreflang="x-default" href="{{ SEO_DOMAIN }}">
+    <link rel="preconnect" href="https://img.shields.io">
+    <meta property="og:title" content="{{ SEO_TITLE }}">
+    <meta property="og:description" content="{{ SEO_DESCRIPTION }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ SEO_DOMAIN }}">
+    <meta property="og:image" content="{{ SEO_IMAGE }}">
+    <meta property="og:image:alt" content="{{ SEO_SITE_NAME }}封面图">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="{{ SEO_SITE_NAME }}">
+    <meta property="og:locale" content="{{ SEO_LOCALE }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ SEO_TITLE }}">
+    <meta name="twitter:description" content="{{ SEO_DESCRIPTION }}">
+    <meta name="twitter:image" content="{{ SEO_IMAGE }}">
+    <meta name="twitter:image:alt" content="{{ SEO_SITE_NAME }}封面图">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "{{ SEO_DOMAIN }}#website",
+          "url": "{{ SEO_DOMAIN }}",
+          "name": {{ SEO_SITE_NAME | tojson }},
+          "description": {{ SEO_DESCRIPTION | tojson }},
+          "inLanguage": "zh-CN",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{{ SEO_DOMAIN }}?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "{{ SEO_DOMAIN }}#webpage",
+          "url": "{{ SEO_DOMAIN }}",
+          "name": {{ SEO_TITLE | tojson }},
+          "description": {{ SEO_DESCRIPTION | tojson }},
+          "isPartOf": { "@id": "{{ SEO_DOMAIN }}#website" },
+          "primaryImageOfPage": { "@type": "ImageObject", "url": "{{ SEO_IMAGE }}" },
+          "inLanguage": "zh-CN"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首页", "item": "{{ SEO_DOMAIN }}" }
+          ]
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="./docs/favicon.png" type="image/png">
+    <link href="./docs/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./docs/css/style.css">
+    <script src="./docs/js/bootstrap.bundle.min.js"></script>
+    <script src="./docs/js/cdn-config.js"></script>
+    <script src="./docs/js/seo-meta.js" defer></script>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html, body { height:100%; }
+        body {
+            padding-top: 60px;
+        }
+        /* ========== 顶部导航栏 ========== */
+        .top-nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1030;
+            background: rgba(15,12,41,0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            height: 60px;
+        }
+        .top-nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-shrink: 0;
+        }
+        .nav-brand {
+            font-size: 1.1rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffd700, #ffaa00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .nav-brand:hover {
+            opacity: 0.85;
+        }
+        .nav-links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 6px;
+        }
+        .nav-link-btn {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 6px 14px;
+            border-radius: 6px;
+            transition: all .2s;
+            white-space: nowrap;
+        }
+        .nav-link-btn:hover {
+            color: #fff;
+            background: rgba(255,255,255,0.1);
+        }
+        .nav-link-btn.active {
+            color: #ffd700;
+            background: rgba(255,215,0,0.12);
+        }
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex: 1;
+            justify-content: flex-end;
+            min-width: 0;
+        }
+        .nav-search {
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            max-width: 260px;
+            width: 100%;
+            transition: border-color .2s;
+        }
+        .nav-search:focus-within {
+            border-color: rgba(255,215,0,0.4);
+        }
+        .nav-search input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 7px 14px;
+            font-size: 0.8rem;
+            width: 100%;
+        }
+        .nav-search input::placeholder {
+            color: rgba(255,255,255,0.35);
+        }
+        .nav-search button {
+            background: transparent;
+            border: none;
+            color: rgba(255,255,255,0.5);
+            padding: 7px 12px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: color .2s;
+        }
+        .nav-search button:hover {
+            color: #ffd700;
+        }
+        .nav-desc {
+            color: rgba(255,255,255,0.4);
+            font-size: 0.65rem;
+            line-height: 1.3;
+            text-align: right;
+            display: none;
+        }
+        @media (min-width: 992px) {
+            .nav-desc { display: block; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .nav-search { max-width: 180px; }
+            .nav-brand { font-size: 0.95rem; }
+        }
+        /* ========== 轮播 ========== */
+        .hero-carousel-wrap {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .hero-carousel,
+        .hero-carousel .carousel-inner,
+        .hero-carousel .carousel-item {
+            height: 420px;
+        }
+        .hero-carousel .carousel-item {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-carousel .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(15,12,41,0.75) 0%, rgba(48,43,99,0.5) 40%, rgba(36,36,62,0.4) 100%);
+            z-index: 1;
+        }
+        .carousel-content {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            z-index: 2;
+            padding: 30px 0 40px;
+            background: linear-gradient(0deg, rgba(15,12,41,0.9) 0%, transparent 100%);
+        }
+        .carousel-content .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .carousel-text h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffd700, #ffaa00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 6px;
+        }
+        .carousel-text p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.85rem;
+            max-width: 500px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .carousel-search {
+            flex-shrink: 0;
+            width: 320px;
+            max-width: 100%;
+        }
+        .carousel-search .input-group {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        .carousel-search .form-control {
+            border: 2px solid rgba(255,215,0,0.3);
+            border-right: none;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(8px);
+            color: #fff;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+        }
+        .carousel-search .form-control::placeholder {
+            color: rgba(255,255,255,0.4);
+        }
+        .carousel-search .form-control:focus {
+            box-shadow: none;
+            border-color: rgba(255,215,0,0.6);
+            background: rgba(255,255,255,0.15);
+        }
+        .carousel-search .btn-warning {
+            border: 2px solid rgba(255,215,0,0.3);
+            border-left: none;
+            background: linear-gradient(135deg, #ffd700, #b8860b);
+            color: #000;
+            font-weight: 600;
+            padding: 10px 20px;
+            font-size: 0.85rem;
+        }
+        .carousel-search .btn-warning:hover {
+            background: linear-gradient(135deg, #b8860b, #ffd700);
+        }
+        .hero-carousel .carousel-indicators {
+            bottom: 10px;
+            z-index: 3;
+        }
+        .hero-carousel .carousel-indicators button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.3);
+            background: transparent;
+            margin: 0 5px;
+        }
+        .hero-carousel .carousel-indicators button.active {
+            background: #ffd700;
+            border-color: #ffd700;
+        }
+        .hero-carousel .carousel-control-prev,
+        .hero-carousel .carousel-control-next {
+            z-index: 3;
+            width: 5%;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+        .hero-carousel:hover .carousel-control-prev,
+        .hero-carousel:hover .carousel-control-next {
+            opacity: 0.7;
+        }
+        .hero-carousel .carousel-control-prev:hover,
+        .hero-carousel .carousel-control-next:hover {
+            opacity: 1;
+        }
+        @media (max-width: 768px) {
+            .hero-carousel, .hero-carousel .carousel-inner, .hero-carousel .carousel-item {
+                height: 320px;
+            }
+            .carousel-text h1 { font-size: 1.4rem; }
+            .carousel-search { width: 100%; }
+            .carousel-content .container { flex-direction: column; align-items: flex-start; }
+        }
+        /* ========== 页脚 ========== */
+        .footer-text {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.8rem;
+        }
+        .section-hero-card {
+            position: relative;
+            border-radius: 16px;
+            min-height: 320px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .section-hero-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        .hot-card-link {
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .hot-card-link:hover {
+            transform: translateY(-4px);
+        }
+        .hot-card {
+            border-radius: 16px;
+            min-height: 220px;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .hot-card-link:hover .hot-card {
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+        }
+        .hot-card-img {
+            transition: transform 0.5s ease;
+        }
+        .hot-card-link:hover .hot-card-img {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-left">
+                <a href="./index.html" class="nav-brand">{{ SITE_TITLE }}</a>
+                <div class="nav-links">
+                    <a href="./index.html" class="nav-link-btn active">首页</a>
+                    <a href="./sections/section-01.html" class="nav-link-btn">电视剧</a>
+                    <a href="./sections/section-02.html" class="nav-link-btn">电影</a>
+                    <a href="./sections/section-03.html" class="nav-link-btn">动漫</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-search">
+                    <input type="text" id="globalSearchInput" placeholder="搜索电影/剧集..." aria-label="搜索">
+                    <button type="button" id="globalSearchBtn">🔍</button>
+                </div>
+                <span class="nav-desc">本站部分资源下载后需7-Zip工具解压<br>如遇解压密码错误，或链接失效，可加QQ 3962799299处理</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 轮播 -->
+    <div class="hero-carousel-wrap">
+        <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                {% for slide in carousel_slides %}
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="{{ loop.index0 }}" {% if loop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ loop.index }}"></button>
+                {% endfor %}
+            </div>
+            <div class="carousel-inner">
+                {% for slide in carousel_slides %}
+                <div class="carousel-item {% if loop.first %}active{% endif %}">
+                    <img src="{{ slide.path }}" alt="{{ slide.get('alt', '影视轮播封面') }}" loading="lazy">
+                    <div class="carousel-overlay"></div>
+                </div>
+                {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">上一张</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">下一张</span>
+            </button>
+            <div class="carousel-content">
+                <div class="container">
+                    <div class="carousel-text">
+                        <h1>{{ INDEX_TITLE }}</h1>
+                        <p>{{ HEADER_EXPLANATION | safe }}</p>
+                    </div>
+                    <div class="carousel-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="heroSearchInput" placeholder="搜索电影/剧集..." aria-label="搜索">
+                            <button class="btn btn-warning" type="button" id="heroSearchBtn">搜索</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Section Cards -->
+        <div class="row mt-2">
+            {{ covers }}
+        </div>
+
+        <!-- Hot Series Recommendations -->
+        {{ hot_sections_html }}
+
+        <!-- Footer -->
+        <hr class="my-4">
+        <div class="text-center footer-text">
+            <p class="mb-1">本站资源仅供学习交流使用，请于下载后 24 小时内删除</p>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()" title="回到顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </button>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="searchModalLabel">搜索结果</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="searchResults">
+                  <div class="text-center text-muted"><p>正在搜索...</p></div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            const btn = document.getElementById('backToTop');
+            btn.style.display = document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ? 'block' : 'none';
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        // Sync hero search with nav search
+        document.addEventListener('DOMContentLoaded', function() {
+            var heroInput = document.getElementById('heroSearchInput');
+            var heroBtn = document.getElementById('heroSearchBtn');
+            var navInput = document.getElementById('globalSearchInput');
+            var navBtn = document.getElementById('globalSearchBtn');
+            if (heroInput && navInput) {
+                heroInput.addEventListener('input', function() { navInput.value = heroInput.value; });
+                navInput.addEventListener('input', function() { heroInput.value = navInput.value; });
+            }
+            if (heroBtn && navBtn) {
+                heroBtn.addEventListener('click', function() {
+                    if (navInput) navInput.value = heroInput ? heroInput.value : '';
+                    navBtn.click();
+                });
+            }
+            if (heroInput) {
+                heroInput.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter') { heroBtn.click(); }
+                });
+            }
+            // 显式初始化轮播
+            var heroCarousel = document.getElementById('heroCarousel');
+            if (heroCarousel && typeof bootstrap !== 'undefined') {
+                var carousel = new bootstrap.Carousel(heroCarousel, {
+                    interval: 4000,
+                    ride: 'carousel',
+                    wrap: true
+                });
+                carousel.cycle();
+            }
+        });
+        console.log('⚡ 加载时间：', performance.now().toFixed(2) + 'ms');
+    </script>
+    <script src="./docs/js/global-search.js"></script>
+    <script src="./docs/js/count-badges.js"></script>
+    <script src="./docs/js/protection.min.js" defer></script>
+</body>
+</html>
