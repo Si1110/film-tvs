@@ -1,0 +1,239 @@
+Total files in 缺失封面: 1721
+  [电视剧资源   ] NO MATCH      [神探狄仁杰【1-3部合集】                           ] current=[../res/covers/神探狄仁杰.jpg]
+  [电视剧资源   ] NO MATCH      [射雕英雄传【7版本大合集】                           ] current=[../res/covers/射雕英雄传/shediao.webp]
+  [电视剧资源   ] NO MATCH      [猎罪图鉴【1-2合集】                             ] current=[侦探悬疑系列/猎罪图鉴【1-2合集】.webp]
+  [电视剧资源   ] NO MATCH      [神雕侠侣【各版本大合集】                            ] current=[../res/covers/神雕侠侣系列/神雕侠侣.webp]
+  [电视剧资源   ] NO MATCH      [无心法师 【全3季】                              ] current=[../res/covers/无心法师系列/无心法师.webp]
+  [电视剧资源   ] NO MATCH      [刑事侦缉档案【4部合集】                            ] current=[../res/covers/刑事侦缉档案系列/刑事侦缉档案_四部合集_默认粤语中字.webp]
+  [电视剧资源   ] NO MATCH      [西游记【各大版本合集】                             ] current=[../res/covers/西游记系列/西游记_各大版本合集.webp]
+  [电视剧资源   ] NO MATCH      [倚天屠龙记【各大版本合集】                           ] current=[../res/covers/倚天屠龙记系列/倚天屠龙记多版本合集.webp]
+  [电视剧资源   ] NO MATCH      [御赐小仵作【2部合集】                             ] current=[../res/covers/御赐小仵作系列/御赐小仵作.webp]
+  [电视剧资源   ] NO MATCH      [重案六组【4部合集】                              ] current=[../res/covers/重案六组系列/重案六组1-4.webp]
+  [电视剧资源   ] NO MATCH      [识骨寻踪【1-12季合集 】                          ] current=[../res/film/侦探悬疑系列/title.jpg]
+  [电视剧资源   ] NO MATCH      [暗黑者【1-3季合集】                             ] current=[../res/covers/暗黑者_S1-S3.jpg]
+  [电视剧资源   ] NO MATCH      [爱情公寓【全5季+番外+电影合集】                       ] current=[../res/covers/爱情公寓_全5季+番外+电影_2009-2020.jpg]
+  [电视剧资源   ] NO MATCH      [罚罪【2部合集】                                ] current=[../res/covers/罚罪1-2.jpg]
+  [电视剧资源   ] NO MATCH      [庆余年【系列合集】                               ] current=[../res/covers/庆余年_1-2_杜比视界版.jpg]
+  [电视剧资源   ] NO MATCH      [爱，死亡和机器人【1-4季合集】                        ] current=[../res/covers/爱，死亡和机器人S1-S4.jpg]
+  [电视剧资源   ] NO MATCH      [超感猎杀【1-2季合集】                            ] current=[../res/covers/超感猎杀.1-2季全合集.jpg]
+  [电视剧资源   ] NO MATCH      [鬼吹灯【电视剧合集】                              ] current=[../res/covers/鬼吹灯电视剧.jpg]
+  [电视剧资源   ] NO MATCH      [9号秘事【1-9季+圣诞特辑合集】                       ] current=[../res/covers/9号秘事.S1-S9+圣诞特辑.jpg]
+  [电视剧资源   ] NO MATCH      [河神【系列合集】                                ] current=[../res/covers/河神系列.jpg]
+  [电视剧资源   ] NO MATCH      [绝命律师/风骚律师【1-6季合集】                       ] current=[../res/covers/绝命律师_风骚律师_S1-S6.jpg]
+  [电视剧资源   ] DEDICATED OK [绝命毒师【系列合集】                              ] ../res/tv/合集封面/绝命毒师【系列合集】.webp
+  [电视剧资源   ] NO MATCH      [老友记【1-10季+重聚特辑合集】                       ] current=[../res/covers/老友记S01-S10+重聚特辑.jpg]
+  [电视剧资源   ] NO MATCH      [斯巴达克斯【1-4季】                             ] current=[../res/covers/斯巴达克斯_1-4季.jpg]
+  [电视剧资源   ] NO MATCH      [神探夏洛克【1-4季合集】                           ] current=[../res/covers/神探夏洛克S01-S04.jpg]
+  [电视剧资源   ] DEDICATED OK [唐朝诡事录【1-4部合集】                           ] ../res/tv/合集封面/唐朝诡事录【1-4部合集】.webp
+  [电视剧资源   ] NO MATCH      [宝莲灯【系列合集】                               ] current=[../res/covers/国产精品系列/宝莲灯_系列合集.jpg]
+  [电视剧资源   ] NO MATCH      [万万没想到【1-3季+番外+电影版合集】                    ] current=[../res/covers/国产精品系列/万万没想到_1_3季+番外+电影版合集.jpg]
+  [电视剧资源   ] NO MATCH      [盗墓笔记【电视剧合集】                             ] current=[国产精品系列/盗墓笔记【电视剧合集】.webp]
+  [电视剧资源   ] NO MATCH      [长相思【2季合集】                               ] current=[../res/covers/国产精品系列/长相思_2季合集.jpg]
+  [电视剧资源   ] NO MATCH      [大江大河【1-3部】                              ] current=[../res/covers/国产精品系列/大江大河_1_3部.jpg]
+  [电视剧资源   ] NO MATCH      [龙门镖局【全2季】                               ] current=[../res/covers/国产精品系列/龙门镖局_全2季.jpg]
+  [电视剧资源   ] NO MATCH      [聊斋【系列合集】                                ] current=[国产精品系列/聊斋【系列合集】.jpg]
+  [电视剧资源   ] NO MATCH      [心理罪【1-2季合集】                             ] current=[../res/covers/侦探悬疑系列/心理罪_1_2季合集.jpg]
+  [电视剧资源   ] NO MATCH      [毛骗【1-3季合集】                              ] current=[侦探悬疑系列/毛骗【1-3季合集】.jpg]
+  [电视剧资源   ] NO MATCH      [大宋提刑官【全2部合集】                            ] current=[../res/covers/侦探悬疑系列/大宋提刑官_全2部合集.jpg]
+  [电视剧资源   ] NO MATCH      [余罪【系列合集】                                ] current=[../res/covers/侦探悬疑系列/余罪_系列合集.jpg]
+  [电视剧资源   ] NO MATCH      [三叉戟【系列合集】                               ] current=[../res/covers/侦探悬疑系列/三叉戟_系列合集.jpg]
+  [电视剧资源   ] NO MATCH      [施公奇案【2部合集】                              ] current=[../res/covers/侦探悬疑系列/施公奇案_2部合集.jpg]
+  [电视剧资源   ] NO MATCH      [古灵精探【系列合集】                              ] current=[../res/covers/侦探悬疑系列/古灵精探_系列合集.jpg]
+  [电视剧资源   ] NO MATCH      [O记实录【I+II合集】                            ] current=[../res/covers/侦探悬疑系列/O记实录_I+II合集.jpg]
+  [电视剧资源   ] NO MATCH      [冲上云霄【系列合集】                              ] current=[../res/covers/港台剧精选系列/冲上云霄_系列合集.jpg]
+  [电视剧资源   ] NO MATCH      [金宵大厦【2部合集】                              ] current=[../res/covers/港台剧精选系列/金宵大厦_2部合集.jpg]
+  [电视剧资源   ] NO MATCH      [还珠格格【1-3季+新还珠格格】                        ] current=[../res/covers/港台剧精选系列/还珠格格_1_3季+新还珠格格.webp]
+  [电视剧资源   ] NO MATCH      [风云【2部合集】                                ] current=[../res/covers/港台剧精选系列/风云_2部合集.jpg]
+  [电视剧资源   ] NO MATCH      [陀枪师姐【全系列合集】                             ] current=[../res/covers/港台剧精选系列/陀枪师姐_全系列合集.jpg]
+  [电视剧资源   ] NO MATCH      [法证先锋【1-6部合集】                            ] current=[../res/covers/港台剧精选系列/法证先锋_1_6部合集.jpg]
+  [电视剧资源   ] NO MATCH      [壹号皇庭【1-5部合集】                            ] current=[../res/covers/港台剧精选系列/壹号皇庭_1_5部合集.jpg]
+  [电视剧资源   ] NO MATCH      [我和僵尸有个约会【1-3季合集】                        ] current=[../res/covers/港台剧精选系列/我和僵尸有个约会_1_3季合集.jpg]
+  [电视剧资源   ] NO MATCH      [使徒行者【1-3部合集】                            ] current=[../res/covers/港台剧精选系列/使徒行者_1_3部合集.jpg]
+  [电视剧资源   ] NO MATCH      [怒火街头【2部合集】                              ] current=[../res/covers/港台剧精选系列/怒火街头_2部合集.jpg]
+  [电视剧资源   ] NO MATCH      [TVB金庸武侠【电视剧合集】                          ] current=[../res/covers/港台剧精选系列/TVB金庸武侠_电视剧合集.jpg]
+  [电视剧资源   ] NO MATCH      [古龙小说改编的【香港电视剧合集】                        ] current=[../res/covers/港台剧精选系列/古龙小说改编的_香港电视剧合集.jpg]
+  [电视剧资源   ] NO MATCH      [楚留香系列【12版本合集】                           ] current=[港台剧精选系列/楚留香系列【12版本合集】.jpg]
+  [电视剧资源   ] NO MATCH      [绝代双骄【4版本合集】                             ] current=[港台剧精选系列/绝代双骄【4版本合集】.jpg]
+  [电视剧资源   ] NO MATCH      [孔雀翎【2版本合集】                              ] current=[港台剧精选系列/孔雀翎【2版本合集】.jpg]
+  [电视剧资源   ] NO MATCH      [陆小凤系列【7部合集】                             ] current=[港台剧精选系列/陆小凤系列【7部合集】.jpg]
+  [电视剧资源   ] NO MATCH      [流星蝴蝶剑【2版本合集】                            ] current=[港台剧精选系列/流星蝴蝶剑【2版本合集】.jpg]
+  [电视剧资源   ] NO MATCH      [小李飞刀【7版本合集】                             ] current=[港台剧精选系列/小李飞刀【7版本合集】.webp]
+  [电视剧资源   ] NO MATCH      [梁羽生武侠小说改编的【香港电视剧合集】                     ] current=[../res/covers/港台剧精选系列/梁羽生武侠小说改编的_香港电视剧合集.jpg]
+  [电视剧资源   ] NO MATCH      [蒙面超人系列假面骑士【大合集】                         ] current=[其他系列/蒙面超人系列假面骑士【大合集】.jpg]
+  [电视剧资源   ] NO MATCH      [黑暗荣耀【全2季合集】                             ] current=[韩剧精选系列/黑暗荣耀【全2季合集】.webp]
+  [电视剧资源   ] DEDICATED OK [无耻之徒【系列合集】                              ] ../res/tv/合集封面/无耻之徒【1-11合集】.webp
+  [电视剧资源   ] DEDICATED OK [黄子华【栋笃笑合集】                              ] ../res/tv/合集封面/黄子华【栋笃笑合集】.webp
+  [电视剧资源   ] NO MATCH      [憨豆先生1990【电视剧合集】                         ] current=[]
+  [电影资源    ] NO MATCH      [木乃伊【美国 2026】                            ] current=[../res/covers/木乃伊【美国_2026】.jpg]
+  [电影资源    ] NO MATCH      [【温子仁】导演系列电影合集 (28部)                     ] current=[../res/covers/【温子仁】导演系列电影合集_(28部).jpg]
+  [电影资源    ] NO MATCH      [【周星驰】电影合集                               ] current=[../res/covers/《周星驰》电影48部_BD1080P_国粤双语音轨_简繁字幕.jpg]
+  [电影资源    ] NO MATCH      [黑客帝国【1-4合集】                             ] current=[]
+  [电影资源    ] DEDICATED OK [招魂系列【1-3合集】                             ] ../res/film/合集封面/招魂系列【1-3合集】.webp
+  [电影资源    ] DEDICATED OK [潜伏系列【1-5合集】                             ] ../res/film/合集封面/潜伏系列【1-5合集】.webp
+  [电影资源    ] DEDICATED OK [安娜贝尔系列【1-3合集】                           ] ../res/film/合集封面/安娜贝尔系列【1-3合集】.webp
+  [电影资源    ] DEDICATED OK [修女系列【1-2合集】                             ] ../res/film/合集封面/修女系列【1-2合集】.webp
+  [电影资源    ] DEDICATED OK [电锯惊魂【1-10合集】                            ] ../res/film/合集封面/电锯惊魂系列【1-10合集】.webp
+  [电影资源    ] DEDICATED OK [海王系列【2部合集】                              ] ../res/film/合集封面/海王系列【2部合集】.webp
+  [电影资源    ] DEDICATED OK [午夜凶铃【日版系列合集】                            ] ../res/film/合集封面/午夜凶铃【日版系列合集】.webp
+  [电影资源    ] DEDICATED OK [午夜凶铃【美版系列合集】                            ] ../res/film/合集封面/午夜凶铃【美版系列合集】.webp
+  [电影资源    ] DEDICATED OK [哥斯拉怪兽行星【系列合集】                           ] ../res/film/合集封面/哥斯拉怪兽行星【系列合集】.webp
+  [电影资源    ] DEDICATED OK [哥斯拉千禧年系列【6部合集】                          ] ../res/film/合集封面/哥斯拉千禧年系列【6部合集】.webp
+  [电影资源    ] DEDICATED OK [哥斯拉平成系列【7部合集】                           ] ../res/film/合集封面/哥斯拉平成系列【7部合集】.webp
+  [电影资源    ] DEDICATED OK [哥斯拉昭和系列【15部合集】                          ] ../res/film/合集封面/哥斯拉昭和系列【15部合集】.webp
+  [电影资源    ] DEDICATED OK [洪金宝【电影合集】                               ] ../res/film/合集封面/洪金宝【电影合集】.jpg
+  [电影资源    ] DEDICATED OK [刘德华【电影合集】                               ] ../res/film/合集封面/刘德华【电影合集】.jpg
+  [电影资源    ] DEDICATED OK [张国荣【电影作品+导演作品+14场演唱会+音乐+14部相关纪录片】       ] ../res/film/合集封面/张国荣【电影作品+导演作品+14场演唱会+音乐+14部相关纪录片】.webp
+  [电影资源    ] DEDICATED OK [成龙【电影合集】                                ] ../res/film/合集封面/成龙【电影合集】.webp
+  [电影资源    ] DEDICATED OK [沈腾【电影合集】                                ] ../res/film/合集封面/沈腾【电影合集】.jpg
+  [电影资源    ] DEDICATED OK [李连杰【电影合集】                               ] ../res/film/合集封面/李连杰【电影合集】.webp
+  [电影资源    ] DEDICATED OK [周润发【电影合集】                               ] ../res/film/合集封面/周润发【电影合集】.webp
+  [电影资源    ] DEDICATED OK [香港奇案【系列电影合集】                            ] ../res/film/合集封面/香港奇案【系列电影合集】.webp
+  [电影资源    ] DEDICATED OK [经典香港电影合集【未删减版】                          ] ../res/film/合集封面/经典香港电影合集【未删减版】.jpg
+  [电影资源    ] DEDICATED OK [猛鬼街【系列合集】                               ] ../res/film/合集封面/猛鬼街【系列合集】.webp
+  [电影资源    ] DEDICATED OK [异形【系列合集】                                ] ../res/film/合集封面/异形【系列合集】.webp
+  [电影资源    ] DEDICATED OK [博物馆奇妙夜【1-4合集】                           ] ../res/film/合集封面/博物馆奇妙夜【1-4合集】.webp
+  [电影资源    ] DEDICATED OK [山村老尸【1-3合集】                             ] ../res/film/合集封面/山村老尸【1-3合集】.webp
+  [电影资源    ] DEDICATED OK [鬼娃回魂【系列合集】                              ] ../res/film/合集封面/鬼娃回魂【系列合集】.webp
+  [电影资源    ] DEDICATED OK [女高怪谈【1-6合集】                             ] ../res/film/合集封面/女高怪谈【1-6合集】.webp
+  [电影资源    ] DEDICATED OK [咒怨【最全系列12部合集】                           ] ../res/film/合集封面/咒怨【最全系列12部】.webp
+  [电影资源    ] DEDICATED OK [阿凡达【系列合集】                               ] ../res/film/合集封面/阿凡达【系列合集】.webp
+  [电影资源    ] DEDICATED OK [猩球崛起【1-4合集】                             ] ../res/film/合集封面/猩球崛起【1-4合集】.webp
+  [电影资源    ] DEDICATED OK [侏罗纪公园★侏罗纪世界【6部合集】                       ] ../res/film/合集封面/侏罗纪公园★侏罗纪世界【6部合集】.webp
+  [电影资源    ] DEDICATED OK [007【系列电影合集】                             ] ../res/film/合集封面/007【系列电影合集】.webp
+  [电影资源    ] DEDICATED OK [德州电锯杀人狂【系列电影合集】                         ] ../res/film/合集封面/德州电锯杀人狂【系列电影合集】.webp
+  [电影资源    ] DEDICATED OK [哈利波特【系列合集】                              ] ../res/film/合集封面/哈利波特【系列合集】.webp
+  [电影资源    ] DEDICATED OK [憨豆先生【全系列合集】                             ] ../res/film/合集封面/憨豆先生【全系列合集】.webp
+  [电影资源    ] DEDICATED OK [憨豆先生卡通版【1-6季合集】                         ] ../res/film/合集封面/憨豆先生卡通版【1-6季合集】.webp
+  [电影资源    ] DEDICATED OK [勇敢者的游戏【系列合集】                            ] ../res/film/合集封面/勇敢者的游戏【1-4合集】.webp
+  [电影资源    ] DEDICATED OK [阴阳师【系列合集】                               ] ../res/film/合集封面/阴阳师【系列合集】.webp
+  [电影资源    ] DEDICATED OK [人体娱蚣【1-3合集】                             ] ../res/film/合集封面/人体娱蚣【1-3合集】.webp
+  [电影资源    ] DEDICATED OK [终结者【1-6合集】                              ] ../res/film/合集封面/终结者【1-6合集】.webp
+  [电影资源    ] DEDICATED OK [神奇动物在哪里【1-3合集】                          ] ../res/film/合集封面/神奇动物在哪里【1-3合集】.webp
+  [电影资源    ] NO MATCH      [王牌特工【系列合集】                              ] current=[]
+  [电影资源    ] DEDICATED OK [洛奇【系列合集】                                ] ../res/film/合集封面/洛奇【系列合集】.webp
+  [电影资源    ] DEDICATED OK [洛奇番外【奎迪3部曲合集】                           ] ../res/film/合集封面/洛奇番外【奎迪3部曲合集】.webp
+  [电影资源    ] DEDICATED OK [小丑【系列合集】                                ] ../res/film/合集封面/小丑【系列合集】.webp
+  [电影资源    ] DEDICATED OK [寄生兽【系列合集】                               ] ../res/film/合集封面/寄生兽【系列合集】.webp
+  [电影资源    ] DEDICATED OK [生化危机【6部真人版+动画版合集】                       ] ../res/film/合集封面/生化危机【6部+动画版+真人版合集】.webp
+  [电影资源    ] DEDICATED OK [生化危机【动画版合集】                             ] ../res/film/合集封面/生化危机【6部+动画版+真人版合集】.webp
+  [电影资源    ] DEDICATED OK [死神来了【1-6合集】                             ] ../res/film/合集封面/死神来了【1-6合集】.webp
+  [动漫资源    ] NO MATCH      [LOL双城之战【系列合集】                           ] current=[../res/film/LOL双城之战/LOL双城之战.jpg]
+  [动漫资源    ] NO MATCH      [民调局异闻录【系列合集】                            ] current=[../res/film/民调局异闻录/民调局异闻录.jpg]
+  [动漫资源    ] NO MATCH      [咒术回战【系列合集】                              ] current=[../res/film/咒术回战/咒术回战.jpg]
+  [动漫资源    ] NO MATCH      [博人传【合集】                                 ] current=[../res/film/博人传/博人传.jpg]
+  [动漫资源    ] NO MATCH      [重生计划（ReLIFE 重返17岁）【系列合集】                ] current=[../res/film/重返十七岁 重生计划/重返十七岁 重生计划.jpg]
+  [动漫资源    ] NO MATCH      [暗杀教室【2季合集】                              ] current=[../res/film/暗杀教室/暗杀教室.jpg]
+  [动漫资源    ] DEDICATED OK [狐妖小红娘【系列合集】                             ] ../res/anime/合集封面/狐妖小红娘【系列合集】.webp
+  [动漫资源    ] NO MATCH      [刀剑神域【系列合集】                              ] current=[../res/film/刀剑神域/刀剑神域.jpg]
+  [动漫资源    ] DEDICATED OK [K【系列合集】                                 ] ../res/anime/合集封面/K【系列合集】.webp
+  [动漫资源    ] NO MATCH      [替身[Another]【系列合集】                       ] current=[../res/film/替身/替身.jpg]
+  [动漫资源    ] NO MATCH      [BLOOD-C【合集】                             ] current=[../res/film/BLOOD-C/BLOOD-C.jpg]
+  [动漫资源    ] NO MATCH      [魔法少女小圆【系列合集】                            ] current=[../res/film/魔法少女小圆/魔法少女小圆.jpg]
+  [动漫资源    ] DEDICATED OK [妖精的尾巴【系列合集】                             ] ../res/anime/合集封面/妖精的尾巴【漫画】.webp
+  [动漫资源    ] NO MATCH      [夏目友人帐【系列合集】                             ] current=[../res/film/夏目友人帐/夏目友人帐.jpg]
+  [动漫资源    ] NO MATCH      [死亡笔记【动漫+漫画系列合集】                         ] current=[../res/film/死亡笔记/死亡笔记.jpg]
+  [动漫资源    ] DEDICATED OK [银魂【系列合集】                                ] ../res/anime/合集封面/银魂【TV版】.webp
+  [动漫资源    ] NO MATCH      [犬夜叉【系列合集】                               ] current=[../res/film/犬夜叉/犬夜叉.jpg]
+  [动漫资源    ] DEDICATED OK [全职猎人【系列合集】                              ] ../res/anime/合集封面/全职猎人【漫画】.webp
+  [动漫资源    ] NO MATCH      [星际牛仔【系列合集】                              ] current=[../res/film/星际牛仔/星际牛仔.jpg]
+  [动漫资源    ] NO MATCH      [新世纪福音战士【系列合集】                           ] current=[../res/film/新世纪福音战士/新世纪福音战士.jpg]
+  [动漫资源    ] DEDICATED OK [灌篮高手【系列合集】                              ] ../res/anime/合集封面/灌篮高手【系列合集】.webp
+  [动漫资源    ] DEDICATED OK [蜡笔小新【系列合集】                              ] ../res/anime/合集封面/蜡笔小新【系列合集】.webp
+  [动漫资源    ] NO MATCH      [樱桃小丸子合集【系列合集】                           ] current=[../res/film/樱桃小丸子/樱桃小丸子.jpg]
+  [动漫资源    ] NO MATCH      [城市猎人【系列合集】                              ] current=[../res/film/城市猎人/城市猎人.jpg]
+  [动漫资源    ] DEDICATED OK [圣斗士星矢【系列合集】                             ] ../res/anime/合集封面/圣斗士星矢【114集】.webp
+  [动漫资源    ] DEDICATED OK [机动战士高达【系列合集】                            ] ../res/anime/合集封面/机动战士高达【OVA合集】.webp
+  [动漫资源    ] DEDICATED OK [棋魂【系列合集】                                ] ../res/anime/合集封面/棋魂【系列合集】.webp
+
+============================================================
+Total合集: 145
+  DEDICATED_OK: 62 (already using 合集封面)
+  UPDATED: 0 (cover replaced)
+  NO MATCH: 83 (no file found in 缺失封面)
+  SAME: 0
+
+============================================================
+NO MATCH entries (need manual review):
+  Sheet=[神探狄仁杰【1-3部合集】] Cover=[../res/covers/神探狄仁杰.jpg]
+  Sheet=[射雕英雄传【7版本大合集】] Cover=[../res/covers/射雕英雄传/shediao.webp]
+  Sheet=[猎罪图鉴【1-2合集】] Cover=[侦探悬疑系列/猎罪图鉴【1-2合集】.webp]
+  Sheet=[神雕侠侣【各版本大合集】] Cover=[../res/covers/神雕侠侣系列/神雕侠侣.webp]
+  Sheet=[无心法师 【全3季】] Cover=[../res/covers/无心法师系列/无心法师.webp]
+  Sheet=[刑事侦缉档案【4部合集】] Cover=[../res/covers/刑事侦缉档案系列/刑事侦缉档案_四部合集_默认粤语中字.webp]
+  Sheet=[西游记【各大版本合集】] Cover=[../res/covers/西游记系列/西游记_各大版本合集.webp]
+  Sheet=[倚天屠龙记【各大版本合集】] Cover=[../res/covers/倚天屠龙记系列/倚天屠龙记多版本合集.webp]
+  Sheet=[御赐小仵作【2部合集】] Cover=[../res/covers/御赐小仵作系列/御赐小仵作.webp]
+  Sheet=[重案六组【4部合集】] Cover=[../res/covers/重案六组系列/重案六组1-4.webp]
+  Sheet=[识骨寻踪【1-12季合集 】] Cover=[../res/film/侦探悬疑系列/title.jpg]
+  Sheet=[暗黑者【1-3季合集】] Cover=[../res/covers/暗黑者_S1-S3.jpg]
+  Sheet=[爱情公寓【全5季+番外+电影合集】] Cover=[../res/covers/爱情公寓_全5季+番外+电影_2009-2020.jpg]
+  Sheet=[罚罪【2部合集】] Cover=[../res/covers/罚罪1-2.jpg]
+  Sheet=[庆余年【系列合集】] Cover=[../res/covers/庆余年_1-2_杜比视界版.jpg]
+  Sheet=[爱，死亡和机器人【1-4季合集】] Cover=[../res/covers/爱，死亡和机器人S1-S4.jpg]
+  Sheet=[超感猎杀【1-2季合集】] Cover=[../res/covers/超感猎杀.1-2季全合集.jpg]
+  Sheet=[鬼吹灯【电视剧合集】] Cover=[../res/covers/鬼吹灯电视剧.jpg]
+  Sheet=[9号秘事【1-9季+圣诞特辑合集】] Cover=[../res/covers/9号秘事.S1-S9+圣诞特辑.jpg]
+  Sheet=[河神【系列合集】] Cover=[../res/covers/河神系列.jpg]
+  Sheet=[绝命律师/风骚律师【1-6季合集】] Cover=[../res/covers/绝命律师_风骚律师_S1-S6.jpg]
+  Sheet=[老友记【1-10季+重聚特辑合集】] Cover=[../res/covers/老友记S01-S10+重聚特辑.jpg]
+  Sheet=[斯巴达克斯【1-4季】] Cover=[../res/covers/斯巴达克斯_1-4季.jpg]
+  Sheet=[神探夏洛克【1-4季合集】] Cover=[../res/covers/神探夏洛克S01-S04.jpg]
+  Sheet=[宝莲灯【系列合集】] Cover=[../res/covers/国产精品系列/宝莲灯_系列合集.jpg]
+  Sheet=[万万没想到【1-3季+番外+电影版合集】] Cover=[../res/covers/国产精品系列/万万没想到_1_3季+番外+电影版合集.jpg]
+  Sheet=[盗墓笔记【电视剧合集】] Cover=[国产精品系列/盗墓笔记【电视剧合集】.webp]
+  Sheet=[长相思【2季合集】] Cover=[../res/covers/国产精品系列/长相思_2季合集.jpg]
+  Sheet=[大江大河【1-3部】] Cover=[../res/covers/国产精品系列/大江大河_1_3部.jpg]
+  Sheet=[龙门镖局【全2季】] Cover=[../res/covers/国产精品系列/龙门镖局_全2季.jpg]
+  Sheet=[聊斋【系列合集】] Cover=[国产精品系列/聊斋【系列合集】.jpg]
+  Sheet=[心理罪【1-2季合集】] Cover=[../res/covers/侦探悬疑系列/心理罪_1_2季合集.jpg]
+  Sheet=[毛骗【1-3季合集】] Cover=[侦探悬疑系列/毛骗【1-3季合集】.jpg]
+  Sheet=[大宋提刑官【全2部合集】] Cover=[../res/covers/侦探悬疑系列/大宋提刑官_全2部合集.jpg]
+  Sheet=[余罪【系列合集】] Cover=[../res/covers/侦探悬疑系列/余罪_系列合集.jpg]
+  Sheet=[三叉戟【系列合集】] Cover=[../res/covers/侦探悬疑系列/三叉戟_系列合集.jpg]
+  Sheet=[施公奇案【2部合集】] Cover=[../res/covers/侦探悬疑系列/施公奇案_2部合集.jpg]
+  Sheet=[古灵精探【系列合集】] Cover=[../res/covers/侦探悬疑系列/古灵精探_系列合集.jpg]
+  Sheet=[O记实录【I+II合集】] Cover=[../res/covers/侦探悬疑系列/O记实录_I+II合集.jpg]
+  Sheet=[冲上云霄【系列合集】] Cover=[../res/covers/港台剧精选系列/冲上云霄_系列合集.jpg]
+  Sheet=[金宵大厦【2部合集】] Cover=[../res/covers/港台剧精选系列/金宵大厦_2部合集.jpg]
+  Sheet=[还珠格格【1-3季+新还珠格格】] Cover=[../res/covers/港台剧精选系列/还珠格格_1_3季+新还珠格格.webp]
+  Sheet=[风云【2部合集】] Cover=[../res/covers/港台剧精选系列/风云_2部合集.jpg]
+  Sheet=[陀枪师姐【全系列合集】] Cover=[../res/covers/港台剧精选系列/陀枪师姐_全系列合集.jpg]
+  Sheet=[法证先锋【1-6部合集】] Cover=[../res/covers/港台剧精选系列/法证先锋_1_6部合集.jpg]
+  Sheet=[壹号皇庭【1-5部合集】] Cover=[../res/covers/港台剧精选系列/壹号皇庭_1_5部合集.jpg]
+  Sheet=[我和僵尸有个约会【1-3季合集】] Cover=[../res/covers/港台剧精选系列/我和僵尸有个约会_1_3季合集.jpg]
+  Sheet=[使徒行者【1-3部合集】] Cover=[../res/covers/港台剧精选系列/使徒行者_1_3部合集.jpg]
+  Sheet=[怒火街头【2部合集】] Cover=[../res/covers/港台剧精选系列/怒火街头_2部合集.jpg]
+  Sheet=[TVB金庸武侠【电视剧合集】] Cover=[../res/covers/港台剧精选系列/TVB金庸武侠_电视剧合集.jpg]
+  Sheet=[古龙小说改编的【香港电视剧合集】] Cover=[../res/covers/港台剧精选系列/古龙小说改编的_香港电视剧合集.jpg]
+  Sheet=[楚留香系列【12版本合集】] Cover=[港台剧精选系列/楚留香系列【12版本合集】.jpg]
+  Sheet=[绝代双骄【4版本合集】] Cover=[港台剧精选系列/绝代双骄【4版本合集】.jpg]
+  Sheet=[孔雀翎【2版本合集】] Cover=[港台剧精选系列/孔雀翎【2版本合集】.jpg]
+  Sheet=[陆小凤系列【7部合集】] Cover=[港台剧精选系列/陆小凤系列【7部合集】.jpg]
+  Sheet=[流星蝴蝶剑【2版本合集】] Cover=[港台剧精选系列/流星蝴蝶剑【2版本合集】.jpg]
+  Sheet=[小李飞刀【7版本合集】] Cover=[港台剧精选系列/小李飞刀【7版本合集】.webp]
+  Sheet=[梁羽生武侠小说改编的【香港电视剧合集】] Cover=[../res/covers/港台剧精选系列/梁羽生武侠小说改编的_香港电视剧合集.jpg]
+  Sheet=[蒙面超人系列假面骑士【大合集】] Cover=[其他系列/蒙面超人系列假面骑士【大合集】.jpg]
+  Sheet=[黑暗荣耀【全2季合集】] Cover=[韩剧精选系列/黑暗荣耀【全2季合集】.webp]
+  Sheet=[憨豆先生1990【电视剧合集】] Cover=[]
+  Sheet=[木乃伊【美国 2026】] Cover=[../res/covers/木乃伊【美国_2026】.jpg]
+  Sheet=[【温子仁】导演系列电影合集 (28部)] Cover=[../res/covers/【温子仁】导演系列电影合集_(28部).jpg]
+  Sheet=[【周星驰】电影合集] Cover=[../res/covers/《周星驰》电影48部_BD1080P_国粤双语音轨_简繁字幕.jpg]
+  Sheet=[黑客帝国【1-4合集】] Cover=[]
+  Sheet=[王牌特工【系列合集】] Cover=[]
+  Sheet=[LOL双城之战【系列合集】] Cover=[../res/film/LOL双城之战/LOL双城之战.jpg]
+  Sheet=[民调局异闻录【系列合集】] Cover=[../res/film/民调局异闻录/民调局异闻录.jpg]
+  Sheet=[咒术回战【系列合集】] Cover=[../res/film/咒术回战/咒术回战.jpg]
+  Sheet=[博人传【合集】] Cover=[../res/film/博人传/博人传.jpg]
+  Sheet=[重生计划（ReLIFE 重返17岁）【系列合集】] Cover=[../res/film/重返十七岁 重生计划/重返十七岁 重生计划.jpg]
+  Sheet=[暗杀教室【2季合集】] Cover=[../res/film/暗杀教室/暗杀教室.jpg]
+  Sheet=[刀剑神域【系列合集】] Cover=[../res/film/刀剑神域/刀剑神域.jpg]
+  Sheet=[替身[Another]【系列合集】] Cover=[../res/film/替身/替身.jpg]
+  Sheet=[BLOOD-C【合集】] Cover=[../res/film/BLOOD-C/BLOOD-C.jpg]
+  Sheet=[魔法少女小圆【系列合集】] Cover=[../res/film/魔法少女小圆/魔法少女小圆.jpg]
+  Sheet=[夏目友人帐【系列合集】] Cover=[../res/film/夏目友人帐/夏目友人帐.jpg]
+  Sheet=[死亡笔记【动漫+漫画系列合集】] Cover=[../res/film/死亡笔记/死亡笔记.jpg]
+  Sheet=[犬夜叉【系列合集】] Cover=[../res/film/犬夜叉/犬夜叉.jpg]
+  Sheet=[星际牛仔【系列合集】] Cover=[../res/film/星际牛仔/星际牛仔.jpg]
+  Sheet=[新世纪福音战士【系列合集】] Cover=[../res/film/新世纪福音战士/新世纪福音战士.jpg]
+  Sheet=[樱桃小丸子合集【系列合集】] Cover=[../res/film/樱桃小丸子/樱桃小丸子.jpg]
+  Sheet=[城市猎人【系列合集】] Cover=[../res/film/城市猎人/城市猎人.jpg]
