@@ -45,11 +45,9 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-*.cover
 *.py.cover
 .hypothesis/
 .pytest_cache/
-cover/
 
 # Translations
 *.mo
@@ -211,7 +209,7 @@ backup
 
 *.json
 # OpenCode large context guard
-tmp/
+tmp
 logs/
 *.sqlite
 *.sqlite3
@@ -221,6 +219,4 @@ logs/
 *.rar
 
 
-# Auto-ignored files over 5MB during git rebuild
-/tmp/anime_0704_progress.json
 

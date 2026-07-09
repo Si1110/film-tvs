@@ -1,9 +1,9 @@
 name: 生成 HTML 页面
 
 on:
-  push:
-    branches:
-      - res
+  # push:
+  #   branches:
+  #     - res
   workflow_dispatch:
 
 permissions:
