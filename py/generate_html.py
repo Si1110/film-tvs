@@ -350,12 +350,7 @@ def generate_index(sheets, sheet_name, section_sheets=None):
         covers.append(cover)
     covers_html = '\n\n'.join(covers)
     
-    # 生成热点推荐 HTML
     hot_html = ''
-    if section_sheets:
-        hot_html = generate_hot_series_html(sheets, section_sheets)
-        if hot_html:
-            log.info(f"✓ 生成热点推荐卡片")
     
     # 收集轮播图片
     carousel_slides = collect_carousel_images()
@@ -429,11 +424,11 @@ def generate_hot_series_html(sheets, section_sheets):
     hot_series_anime = [s.strip() for s in GLOBAL_CONFIG.get('HOT_SERIES_ANIME', '').split(',') if s.strip()]
     
     items_config = [
-        (0, hot_items_tv, '热点电视剧资源'),
-        (1, hot_items_movie, '热点电影资源'),
+        (0, hot_items_tv),
+        (1, hot_items_movie),
     ]
     series_config = [
-        (2, hot_series_anime, '热点动漫资源'),
+        (2, hot_series_anime),
     ]
     
     def make_card(cover_path, title, badge_text, link_url):
@@ -458,7 +453,7 @@ def generate_hot_series_html(sheets, section_sheets):
     result = ''
     
     # 按条目标题匹配
-    for sec_idx, title_list, sec_title in items_config:
+    for sec_idx, title_list in items_config:
         if not title_list or sec_idx >= len(section_sheets):
             continue
         sheet_name = section_sheets[sec_idx]
@@ -489,10 +484,10 @@ def generate_hot_series_html(sheets, section_sheets):
             cards.append(make_card(cover, target_title, series_name, link))
         
         if cards:
-            result += render_hot_section(sec_idx, sec_title, cards)
+            result += render_hot_section(cards)
     
     # 按系列名匹配（动漫）
-    for sec_idx, series_list, sec_title in series_config:
+    for sec_idx, series_list in series_config:
         if not series_list or sec_idx >= len(section_sheets):
             continue
         sheet_name = section_sheets[sec_idx]
@@ -517,20 +512,14 @@ def generate_hot_series_html(sheets, section_sheets):
             cards.append(make_card(cover, series_name, f'{len(items)} 部', link))
         
         if cards:
-            result += render_hot_section(sec_idx, sec_title, cards)
+            result += render_hot_section(cards)
     
     return result
 
 
-def render_hot_section(sec_idx, sec_title, cards):
-    link = f'./sections/section-{sec_idx+1:02d}.html'
+def render_hot_section(cards):
     return f'''
-        <!-- {sec_title} -->
         <div class="hot-section mt-4 mb-4">
-            <div class="d-flex align-items-center justify-content-between mb-3">
-                <h3 class="fw-bold mb-0" style="font-size:1.5rem;background:linear-gradient(135deg,#ffd700,#ffaa00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">{sec_title}</h3>
-                <a href="{link}" class="text-decoration-none" style="font-size:0.85rem;color:rgba(255,255,255,0.4);transition:color .2s;white-space:nowrap;">更多 ›</a>
-            </div>
             <div class="row g-3">
 {chr(10).join(cards)}
             </div>
