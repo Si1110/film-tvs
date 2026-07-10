@@ -31,6 +31,14 @@ SHEET_INDEX = 'index'
 GLOBAL_FILE = "./res/README.md"
 GLOBAL_CONFIG = {}
 
+SECTION_DISPLAY_NAMES = {
+    '电视剧资源': '剧集资源',
+}
+
+
+def get_section_display_name(section_name):
+    return SECTION_DISPLAY_NAMES.get(section_name, section_name)
+
 # 生成网页模板文件
 TEMPLATE_SECTION = "./templates/section-tpl.html"  # section 模板文件
 TEMPLATE_CARD = "./templates/card-tpl.html"  # card 模板文件
@@ -141,7 +149,7 @@ def generate_sections(sheets, sheet_list) :
         
         
         # 生成 HTML
-        html_content = generate_section(lines, sheet_name, idx)
+        html_content = generate_section(lines, get_section_display_name(sheet_name), idx)
         
         # 保存文件
         html_path = os.path.join(OUTPUT_DIR, html_name)
@@ -386,7 +394,7 @@ def generate_cover_html(cover_data, idx):
         'section_id': idx,
         'section_link': f"./sections/section-{idx:02d}.html",
         'poster_path': cover_data.get('封面图片路径', f'./res/covers/{idx:02d}.webp'),
-        'section_name': cover_data.get('主标题', ''),
+        'section_name': get_section_display_name(cover_data.get('主标题', '')),
         'description': cover_data.get('概要', ''),
         'count': cover_data.get('卡片数量', 0),
         'tags': tags_list,
@@ -685,7 +693,7 @@ def update_seo_meta_js(index_data, section_sheets):
     import json
     series_list = []
     for idx, data in enumerate(index_data[:len(section_sheets)]):
-        name = data.get('主标题', '')
+        name = get_section_display_name(data.get('主标题', ''))
         description = data.get('概要', '')
         if name:
             series_list.append(f"            {{ name: {json.dumps(name, ensure_ascii=False)}, description: {json.dumps(description, ensure_ascii=False)} }}")
@@ -751,7 +759,8 @@ def update_global_search_js(section_sheets):
     sections_list = []
     for idx, sheet_name in enumerate(section_sheets):
         file_name = f'section-{idx+1:02d}.html'
-        sections_list.append(f"        {{ file: '{file_name}', name: '{sheet_name}' }}")
+        section_name = get_section_display_name(sheet_name)
+        sections_list.append(f"        {{ file: '{file_name}', name: '{section_name}' }}")
     
     sections_js = ',\n'.join(sections_list)
     
@@ -792,7 +801,7 @@ def generate_sitemap(sheets, section_sheets):
         # 从 index sheet 获取对应 section 的信息
         index_data = sheets.get('index', {}).get('data', [])
         section_info = index_data[idx - 1] if idx <= len(index_data) else {}
-        section_title = section_info.get('主标题', f'Section {idx}')
+        section_title = get_section_display_name(section_info.get('主标题', f'Section {idx}'))
         
         link_context = {
             'loc': f'{domain}/sections/section-{idx:02d}.html',

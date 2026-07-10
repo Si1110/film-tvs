@@ -12,7 +12,7 @@
 
     // Section 配置
     const SECTIONS = [
-        { file: 'section-01.html', name: '电视剧资源' },
+        { file: 'section-01.html', name: '剧集资源' },
         { file: 'section-02.html', name: '电影资源' },
         { file: 'section-03.html', name: '动漫资源' }
     ];
