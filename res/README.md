@@ -12,7 +12,7 @@ SITE_TITLE=山月影视库
 
 INDEX_TITLE=📺 山月影视库 📺
 
-HEADER_EXPLANATION=本站部分资源下载后需 <a target="_blank" href="https://www.7-zip.org/">7-Zip</a> 工具解压<br/>如遇解压密码错误，或链接失效，可加 QQ 3962799299 处理
+HEADER_EXPLANATION=本站部分资源下载后需 <a target="_blank" href="https://www.7-zip.org/">7-Zip</a> 工具解压<br/>如遇解压密码错误，或链接失效，可加 QQ 753738153 处理
 ```
 
 
