@@ -40,12 +40,8 @@
           "url": "{{ SEO_DOMAIN }}",
           "name": {{ SEO_SITE_NAME | tojson }},
           "description": {{ SEO_DESCRIPTION | tojson }},
-          "inLanguage": "zh-CN",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "{{ SEO_DOMAIN }}?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
+          "keywords": {{ SEO_KEYWORDS | tojson }},
+          "inLanguage": "zh-CN"
         },
         {
           "@type": "CollectionPage",
@@ -55,6 +51,12 @@
           "description": {{ SEO_DESCRIPTION | tojson }},
           "isPartOf": { "@id": "{{ SEO_DOMAIN }}#website" },
           "primaryImageOfPage": { "@type": "ImageObject", "url": "{{ SEO_IMAGE }}" },
+          "about": ["免费影视下载", "电视剧资源", "电影资源", "动漫资源", "网盘资源"],
+          "hasPart": [
+            { "@type": "CollectionPage", "name": "电视剧资源免费下载", "url": "{{ SEO_DOMAIN }}sections/section-01.html" },
+            { "@type": "CollectionPage", "name": "电影资源免费下载", "url": "{{ SEO_DOMAIN }}sections/section-02.html" },
+            { "@type": "CollectionPage", "name": "动漫资源免费下载", "url": "{{ SEO_DOMAIN }}sections/section-03.html" }
+          ],
           "inLanguage": "zh-CN"
         },
         {
@@ -391,7 +393,7 @@
                     <input type="text" id="globalSearchInput" placeholder="搜索电影/剧集..." aria-label="搜索">
                     <button type="button" id="globalSearchBtn">🔍</button>
                 </div>
-                <span class="nav-desc">本站部分资源下载后需7-Zip工具解压<br>如遇解压密码错误，或链接失效，可加QQ 753738153处理</span>
+                <span class="nav-desc">电视剧 / 电影 / 动漫资源免费下载<br>夸克网盘、百度网盘链接失效可加QQ 753738153处理</span>
             </div>
         </div>
     </nav>
@@ -449,7 +451,7 @@
         <!-- Footer -->
         <hr class="my-4">
         <div class="text-center footer-text">
-            <p class="mb-1">本站资源仅供学习交流使用，请于下载后 24 小时内删除</p>
+            <p class="mb-1">本站提供免费影视资源导航，链接失效或解压问题可联系 QQ 753738153 处理</p>
         </div>
     </div>
 

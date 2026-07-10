@@ -205,18 +205,22 @@ def generate_section(sheet_data, section_title, section_number):
     ))[:12])
 
     if section_number == 1:
-        section_desc = f"{section_title}合集导航，收录{desc_series}等经典剧集，覆盖日剧、港剧、国产剧与热门悬疑、青春、武侠作品。"
-        section_keys = f"90后,经典电视剧,日剧,{key_series},高清下载,中文字幕,mp4,港剧,国产剧,悬疑剧,武侠剧,日剧下载"
+        section_seo_title = f"{section_title}免费下载 - {GLOBAL_CONFIG.get('SEO_SITE_NAME', '山月影视库')}"
+        section_desc = f"{section_title}免费下载导航，收录{desc_series}等经典剧集，支持夸克网盘、百度网盘获取，覆盖日剧、港剧、国产剧与悬疑、青春、武侠作品。"
+        section_keys = f"免费电视剧下载,电视剧资源下载,夸克网盘电视剧,百度网盘电视剧,经典电视剧,日剧下载,港剧下载,国产剧下载,{key_series},高清下载,中文字幕,mp4,mkv,悬疑剧,武侠剧"
         genres = ['古装', '悬疑', '喜剧', '犯罪', '奇幻', '剧情', '爱情', '惊悚', '科幻']
     elif section_number == 2:
-        section_desc = f"{section_title}合集导航，收录{desc_series}等经典电影系列，覆盖好莱坞大片、华语电影、日影、恐怖、科幻与喜剧作品。"
-        section_keys = f"90后,经典电影,好莱坞,{key_series},高清下载,中文字幕,mp4,恐怖,科幻,喜剧,经典电影下载"
+        section_seo_title = f"{section_title}免费下载 - {GLOBAL_CONFIG.get('SEO_SITE_NAME', '山月影视库')}"
+        section_desc = f"{section_title}免费下载导航，收录{desc_series}等经典电影系列，支持夸克网盘、百度网盘获取，覆盖好莱坞大片、华语电影、日影、恐怖、科幻与喜剧作品。"
+        section_keys = f"免费电影下载,电影资源下载,夸克网盘电影,百度网盘电影,经典电影下载,好莱坞电影,{key_series},高清下载,中文字幕,mp4,mkv,恐怖电影,科幻电影,喜剧电影"
         genres = ['喜剧', '动作', '科幻', '爱情', '悬疑', '奇幻', '剧情', '恐怖', '犯罪', '惊悚', '冒险']
     elif section_number == 3:
-        section_desc = f"{section_title}合集导航，收录{desc_series}等经典动漫与番剧，覆盖热血、治愈、悬疑、科幻、异世界与童年怀旧题材。"
-        section_keys = f"90后,经典动漫,番剧,动漫下载,日本动漫,{key_series},高清下载,中文字幕,mp4,动漫合集"
+        section_seo_title = f"{section_title}免费下载 - {GLOBAL_CONFIG.get('SEO_SITE_NAME', '山月影视库')}"
+        section_desc = f"{section_title}免费下载导航，收录{desc_series}等经典动漫与番剧，支持夸克网盘、百度网盘获取，覆盖热血、治愈、悬疑、科幻、异世界与童年怀旧题材。"
+        section_keys = f"免费动漫下载,动漫资源下载,番剧下载,日本动漫下载,夸克网盘动漫,百度网盘动漫,{key_series},高清下载,中文字幕,mp4,mkv,动漫合集"
         genres = ['喜剧', '冒险', '动作', '运动', '剧情', '奇幻', '科幻', '爱情', '悬疑', '恐怖']
     else:
+        section_seo_title = f"{section_title}免费下载 - {GLOBAL_CONFIG.get('SEO_SITE_NAME', '山月影视库')}"
         section_desc = f"{section_title}合集"
         section_keys = GLOBAL_CONFIG.get('SEO_KEYWORDS', '')
         genres = ['古装', '悬疑', '喜剧', '犯罪', '动作', '奇幻', '剧情', '爱情', '惊悚']
@@ -233,15 +237,25 @@ def generate_section(sheet_data, section_title, section_number):
         section_keys = ','.join(parts)
 
     heji_count = sum(1 for d in sorted_items if is_heji(str(d.get('主标题', ''))))
+    section_items_seo = [
+        {
+            'name': str(d.get('主标题', '')),
+            'description': str(d.get('概要', ''))[:120],
+        }
+        for d in sorted_items[:30]
+        if str(d.get('主标题', ''))
+    ]
 
     context = {
         'section_title': section_title,
+        'section_seo_title': section_seo_title,
         'section_number': section_number,
         'section_filename': section_filename,
         'total_count': len(sorted_items),
         'section_content': section_content,
         'section_description': section_desc,
         'section_keywords': section_keys,
+        'section_items_seo': section_items_seo,
         'genres': genres,
         'heji_count': heji_count,
         **GLOBAL_CONFIG
