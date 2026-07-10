@@ -265,10 +265,24 @@ def normalize_cover_path(path):
     # 缺少 ../res/covers/ 前缀（如 "其他系列/xxx.webp"）
     return f'../res/covers/{path}'
 
+def get_netdisk_name(download_link, fallback='百度网盘'):
+    """根据下载链接识别网盘名称，字段缺失时使用 fallback。"""
+    link = str(download_link or '').lower()
+    if 'quark.cn' in link:
+        return '夸克网盘'
+    if 'baidu.com' in link:
+        return '百度网盘'
+    if 'aliyundrive.com' in link or 'alipan.com' in link:
+        return '阿里云盘'
+    if 'uc.cn' in link:
+        return 'UC网盘'
+    return fallback or '网盘下载'
+
 def generate_card_html(card_data, card_idx=0):
     """生成单个电影卡片 HTML（从模板渲染）"""
 
     # 准备字段
+    download_link = card_data.get('下载链接', 'FIXME')
     context = {
         'card_id': f'card-desc-{card_idx}',
         'poster_path': normalize_cover_path(card_data.get('封面图片路径', '')), 
@@ -278,8 +292,8 @@ def generate_card_html(card_data, card_idx=0):
         'language': card_data.get('语言', '日语'),
         'subtitle_text': card_data.get('字幕', '中文'),
         'menu_path': card_data.get('目录路径', ''), 
-        'download_name': card_data.get('网盘名称', '百度网盘'),
-        'download_link': card_data.get('下载链接', 'FIXME'),
+        'download_name': get_netdisk_name(download_link, card_data.get('网盘名称', '百度网盘')),
+        'download_link': download_link,
         'password': card_data.get('解压密码', 'FIXME'),
         'formats': card_data.get('支持格式', 'mp4'),
         'card_foot': card_data.get('卡片页脚', ''),

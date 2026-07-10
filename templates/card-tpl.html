@@ -39,7 +39,7 @@
                       <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#downloadModal" 
                         data-bs-download="{{ download_link }}" 
                         data-uuid="{{ password }}">
-                        <i class="bi bi-download"></i> 点此下载</button>
+                        <i class="bi bi-download"></i> {{ download_name }}</button>
                     </div>
                     {% if '上映时间' in card_foot %}<small class="text-muted text-end ms-2" style="font-size: 0.7rem;">{{ card_foot }}</small>{% endif %}
                   </div>
