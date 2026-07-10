@@ -454,22 +454,16 @@
     </style>
 </head>
 <body>
-    <!-- 支付模态框 -->
-    <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <!-- 下载模态框 -->
+    <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title" id="downloadModalLabel">请在 60 秒内 <font color="red">支付 3 元</font> 后下载：</h5>
+                  <h5 class="modal-title" id="downloadModalLabel">下载信息</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  <p class="text-center text-muted mb-2" style="font-size: 0.9rem;">付款完成后，等待倒计时结束，点击右下角"我已支付"，即可进行下载</p>
-                  <div class="d-flex justify-content-around">
-                      <img src="../imgs/pay/alipay.png" class="img-fluid" alt="alipay" width="45%">
-                      <img src="../imgs/pay/wechat.png" class="img-fluid" alt="wechat" width="45%">
-                  </div>
-                  <div id="downloadInfo" style="display: none; margin-top: 20px;">
-                      <hr>
+                  <div id="downloadInfo">
                       <div class="alert alert-info">
                           <p><strong>下载链接：</strong><a id="modalDownloadLink" href="#" target="_blank">[点我下载]</a></p>
                           <p class="d-flex justify-content-between align-items-center">
@@ -484,8 +478,7 @@
                   </div>
               </div>
               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" onclick="closeModal()">取消下载</button>
-                  <button type="button" class="btn btn-primary" id="confirmButton" disabled>等待支付 (60)</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
               </div>
           </div>
       </div>

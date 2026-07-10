@@ -1,31 +1,3 @@
-// 获取 URL 查询参数
-function getQueryParams() {
-  const params = {};
-  const queryString = window.location.search.slice(1);
-  const queries = queryString.split('&');
-
-  for (const query of queries) {
-    const [key, value] = query.split('=');
-    if (key && value) {
-      params[key] = decodeURIComponent(value);
-    }
-  }
-
-  return params;
-}
-
-// 初始化倒计时时间
-function initializeCounter() {
-  const params = getQueryParams();
-  let cnt = (1 + 2 + 3) * 10; // 默认支付时间
-
-  if (params.debug === 'true' && params.cnt) {
-    cnt = parseInt(params.cnt, 10);
-  }
-
-  return cnt;
-}
-
 // 关闭模态框
 function closeModal() {
   var modalInstance = bootstrap.Modal.getInstance(document.getElementById('downloadModal'));
@@ -97,15 +69,10 @@ function copyToClipboard(elementId, event) {
 
 // 页面加载完成后执行
 document.addEventListener('DOMContentLoaded', function() {
-  let timer;
-  let autoCloseTimer;
-  let cnt = initializeCounter();
-
   // 下载模态框事件监听
   document.getElementById('downloadModal').addEventListener('show.bs.modal', function (event) {
     const button = event.relatedTarget;
     const modalUUID = button.getAttribute('data-uuid');
-    const confirmButton = document.getElementById('confirmButton');
     const downloadInfo = document.getElementById('downloadInfo');
     const downloadUrl = button.getAttribute('data-bs-download');
     
@@ -117,55 +84,10 @@ document.addEventListener('DOMContentLoaded', function() {
       extractCode = '0000';
     }
 
-    // 隐藏下载信息
-    downloadInfo.style.display = 'none';
-
-    confirmButton.disabled = true;
-    confirmButton.textContent = `等待支付 (${cnt})`;
-
-    timer = setInterval(function () {
-      cnt--;
-      if (cnt <= 0) {
-        clearInterval(timer);
-        confirmButton.disabled = false;
-        confirmButton.textContent = '我已支付';
-
-        confirmButton.onclick = function () {
-          // 显示下载信息
-          downloadInfo.style.display = 'block';
-          document.getElementById('modalDownloadLink').href = downloadUrl;
-          document.getElementById('modalExtractCode').textContent = extractCode;
-          document.getElementById('modalUUID').textContent = modalUUID;
-
-          // 禁用按钮，防止重复点击
-          confirmButton.disabled = true;
-          confirmButton.textContent = '支付窗口即将关闭，请尽快保存';
-
-          // 可选：触发下载
-          // const a = document.createElement('a');
-          // a.href = downloadUrl;
-          // a.download = '';
-          // a.target = '_blank';
-          // document.body.appendChild(a);
-          // a.click();
-          // document.body.removeChild(a);
-
-          // 在显示下载信息后的 120 秒内自动关闭
-          autoCloseTimer = setTimeout(function () {
-            closeModal();
-          }, 120000);
-        };
-      } else {
-        confirmButton.textContent = `等待支付 (${cnt})`;
-      }
-    }, 1000);
-  });
-
-  // 模态框关闭事件监听
-  document.getElementById('downloadModal').addEventListener('hide.bs.modal', function () {
-    clearInterval(timer);
-    clearTimeout(autoCloseTimer);
-    cnt = initializeCounter();
+    downloadInfo.style.display = 'block';
+    document.getElementById('modalDownloadLink').href = downloadUrl;
+    document.getElementById('modalExtractCode').textContent = extractCode;
+    document.getElementById('modalUUID').textContent = modalUUID;
   });
 
   // 激活 Tooltip
