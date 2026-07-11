@@ -305,6 +305,7 @@ def generate_card_html(card_data, card_idx=0):
 
     # 准备字段
     download_link = card_data.get('下载链接', 'FIXME')
+    backup_download_link = card_data.get('备用下载链接', '')
     context = {
         'card_id': f'card-desc-{card_idx}',
         'poster_path': normalize_cover_path(card_data.get('封面图片路径', '')), 
@@ -316,6 +317,10 @@ def generate_card_html(card_data, card_idx=0):
         'menu_path': card_data.get('目录路径', ''), 
         'download_name': get_netdisk_name(download_link, card_data.get('网盘名称', '百度网盘')),
         'download_link': download_link,
+        'backup_menu_path': card_data.get('备用目录路径', ''),
+        'backup_download_name': get_netdisk_name(backup_download_link, card_data.get('备用网盘名称', '')),
+        'backup_download_link': backup_download_link,
+        'backup_password': card_data.get('备用解压密码', ''),
         'password': card_data.get('解压密码', 'FIXME'),
         'formats': card_data.get('支持格式', 'mp4'),
         'card_foot': card_data.get('卡片页脚', ''),

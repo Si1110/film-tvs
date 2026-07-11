@@ -40,6 +40,12 @@
                         data-bs-download="{{ download_link }}" 
                         data-uuid="{{ password }}">
                         <i class="bi bi-download"></i> {{ download_name }}</button>
+                      {% if backup_download_link %}
+                      <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#downloadModal" 
+                        data-bs-download="{{ backup_download_link }}" 
+                        data-uuid="{{ backup_password }}">
+                        <i class="bi bi-download"></i> {{ backup_download_name }}</button>
+                      {% endif %}
                     </div>
                     {% if '上映时间' in card_foot %}<small class="text-muted text-end ms-2" style="font-size: 0.7rem;">{{ card_foot }}</small>{% endif %}
                   </div>
