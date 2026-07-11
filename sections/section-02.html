@@ -840,6 +840,7 @@
                         <button class="filter-btn" data-row="1" data-value="日本" onclick="filterCards(event, 1, '日本')">日本</button>
                         <button class="filter-btn" data-row="1" data-value="欧美" onclick="filterCards(event, 1, '欧美')">欧美</button>
                         <button class="filter-btn" data-row="1" data-value="韩国" onclick="filterCards(event, 1, '韩国')">韩国</button>
+                        <button class="filter-btn" data-row="1" data-value="其他" onclick="filterCards(event, 1, '其他')">其他</button>
                     </div>
                     <div class="filter-row" id="filterRow2">
                         <span class="filter-label">类型</span>
@@ -67539,6 +67540,8 @@
         var val = (c.getAttribute('data-' + attr) || '').toLowerCase();
         if (v === '港台' && attr === 'region') {
           c.style.display = (val === '香港' || val === '台湾') ? '' : 'none';
+        } else if (v === '其他' && attr === 'region') {
+          c.style.display = (['大陆', '香港', '台湾', '日本', '欧美', '韩国'].indexOf(val) === -1) ? '' : 'none';
         } else {
           c.style.display = val.indexOf(v.toLowerCase()) >= 0 ? '' : 'none';
         }
