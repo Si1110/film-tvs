@@ -45,7 +45,12 @@ CATEGORY_TO_SHEET = {
     "动漫": "动漫资源",
 }
 
-EXTRA_HEADERS = ["备用网盘名称", "备用下载链接", "备用目录路径", "备用解压密码"]
+EXTRA_HEADERS = [
+    "备用网盘名称",
+    "备用下载链接",
+    "备用目录路径",
+    "备用解压密码",
+]
 
 
 def norm_link(value: str) -> str:
