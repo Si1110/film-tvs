@@ -828,7 +828,7 @@
             </div>
         </div>
 
-        <!-- 三行筛选导航 + 合集资源 CTA -->
+        <!-- 筛选导航 + 合集资源 CTA -->
         <div class="filter-bar" id="filterBar">
             <div class="filter-bar-inner">
                 <div class="filter-rows">
@@ -863,15 +863,6 @@
                         
                         <button class="filter-btn" data-row="2" data-value="科幻" onclick="filterCards(event, 2, '科幻')">科幻</button>
                         
-                    </div>
-                    <div class="filter-row" id="filterRow3">
-                        <span class="filter-label">语言</span>
-                        <button class="filter-btn active" data-row="3" data-value="all" onclick="filterCards(event, 3, 'all')">全部</button>
-                        <button class="filter-btn" data-row="3" data-value="国语" onclick="filterCards(event, 3, '国语')">国语</button>
-                        <button class="filter-btn" data-row="3" data-value="粤语" onclick="filterCards(event, 3, '粤语')">粤语</button>
-                        <button class="filter-btn" data-row="3" data-value="日语" onclick="filterCards(event, 3, '日语')">日语</button>
-                        <button class="filter-btn" data-row="3" data-value="英语" onclick="filterCards(event, 3, '英语')">英语</button>
-                        <button class="filter-btn" data-row="3" data-value="韩语" onclick="filterCards(event, 3, '韩语')">韩语</button>
                     </div>
                 </div>
                 <div class="heji-cta-wrapper">
@@ -67620,7 +67611,7 @@
     }
     function applyFilter() {
       var r = activeFilter.row, v = activeFilter.value;
-      var attrs = { 1: 'region', 2: 'genre', 3: 'lang' };
+      var attrs = { 1: 'region', 2: 'genre' };
       var cards = document.querySelectorAll('.card-wrapper');
       if (v === 'all') {
         cards.forEach(function(c) { c.style.display = ''; });
