@@ -386,7 +386,7 @@
             <div class="carousel-inner">
                 {% for slide in carousel_slides %}
                 <div class="carousel-item {% if loop.first %}active{% endif %}">
-                    <img src="{{ slide.path }}" alt="{{ slide.get('alt', '影视轮播封面') }}" loading="lazy">
+                    <img src="{{ slide.path }}" alt="{{ slide.get('alt', '影视轮播封面') }}" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
                     <div class="carousel-overlay"></div>
                 </div>
                 {% endfor %}
