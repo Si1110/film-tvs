@@ -1,0 +1,5 @@
+argparse>=1.4.0
+py-color-log>=1.0.4
+python-dotenv>=1.0.0
+openpyxl>=3.1.0
+jinja2>=3.0.0

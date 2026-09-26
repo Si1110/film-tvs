@@ -1,0 +1,68 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "watcher": {
+        "ignore": [
+            "res/covers/**",
+            "res/hot-covers/**",
+            "res/movie-covers/**",
+            "res/**/*.png",
+            "res/**/*.jpg",
+            "res/**/*.jpeg",
+            "res/**/*.webp",
+            "res/**/*.gif",
+            "res/**/*.avif",
+            "res/**/*.ico",
+            "imgs/**",
+            "tmp/**",
+            "logs/**",
+            ".git/**"
+        ]
+    },
+    "permission": {
+        "read": {
+            "*": "allow",
+            "res/covers/**": "deny",
+            "res/hot-covers/**": "deny",
+            "res/movie-covers/**": "deny",
+            "res/**/*.png": "deny",
+            "res/**/*.jpg": "deny",
+            "res/**/*.jpeg": "deny",
+            "res/**/*.webp": "deny",
+            "res/**/*.gif": "deny",
+            "res/**/*.avif": "deny",
+            "res/**/*.ico": "deny",
+            "imgs/**": "deny"
+        },
+        "glob": {
+            "*": "allow",
+            "res/covers/**": "deny",
+            "res/hot-covers/**": "deny",
+            "res/movie-covers/**": "deny",
+            "res/**/*.png": "deny",
+            "res/**/*.jpg": "deny",
+            "res/**/*.jpeg": "deny",
+            "res/**/*.webp": "deny",
+            "res/**/*.gif": "deny",
+            "res/**/*.avif": "deny",
+            "res/**/*.ico": "deny",
+            "imgs/**": "deny"
+        },
+        "edit": {
+            "*": "allow",
+            "res/covers/**": "deny",
+            "res/hot-covers/**": "deny",
+            "res/movie-covers/**": "deny",
+            "res/**/*.png": "deny",
+            "res/**/*.jpg": "deny",
+            "res/**/*.jpeg": "deny",
+            "res/**/*.webp": "deny",
+            "res/**/*.gif": "deny",
+            "res/**/*.avif": "deny",
+            "res/**/*.ico": "deny",
+            "imgs/**": "deny"
+        }
+    },
+    "instructions": [
+        "AGENTS.md"
+    ]
+}

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# 禁止索引敏感 JS
+Disallow: /docs/js/protection.min.js
+Disallow: /docs/js/protection.js
+
+Sitemap: https://si1110.github.io/film-tvs/sitemap.xml
+
+# Crawl-delay: 1
