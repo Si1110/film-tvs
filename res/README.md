@@ -12,7 +12,7 @@ SITE_TITLE=山月影视库
 
 INDEX_TITLE=📺 山月影视库 免费影视下载 📺
 
-HEADER_EXPLANATION=电视剧、电影、动漫资源均可免费下载，支持夸克网盘、百度网盘等方式获取<br/>部分压缩资源需 <a target="_blank" href="https://www.7-zip.org/">7-Zip</a> 解压；链接失效可加 QQ 753738153 处理
+HEADER_EXPLANATION=电视剧、电影、动漫资源均可免费下载，支持夸克网盘、百度网盘等方式获取<br/>部分压缩资源需 <a target="_blank" href="https://www.7-zip.org/">7-Zip</a> 解压；链接失效可加 QQ 753738153 处理，或进入以下网址自取最新网盘链接：<a target="_blank" href="https://docs.qq.com/sheet/DZWtJdWRRUGJxb1dq?tab=BB08J2">https://docs.qq.com/sheet/DZWtJdWRRUGJxb1dq?tab=BB08J2</a>
 ```
 
 
